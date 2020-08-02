@@ -6,14 +6,21 @@
 
 import numpy as np
 import pandas as pd
+from pyunpack import Archive
 
 
 def getCleanDataframe(filePath):
+   # Unzip and save in save folder as .rar
+    Archive(filePath).extractall("/".join(filePath.split("/")[0:3]))
 
-    df = getRawDataFrame(filePath)
+    df = getRawDataFrame(filePath[0:-3]+"json")
     df = dateFormatting(df)
     table = rawDatatoTable(df)
-    return finalDataFrame(table)
+    df = finalDataFrame(table)
+    # SaveInPickle in new folder where rest of dataframes are
+    saveInPickle(df, "../DataFrames/Stations/" +
+                 filePath.split("/")[-1].split(".")[0]+".pkl")
+    return 0
 
 
 def getRawDataFrame(filePath):
@@ -24,6 +31,7 @@ def getRawDataFrame(filePath):
 
 def dateFormatting(df):
     df['_id'] = pd.to_datetime(df['_id'], format='%Y-%m-%dT%H:%M:%S')
+
     return df
 
 
@@ -66,3 +74,7 @@ def finalDataFrame(table):
                          no_available, DockBikes],  names=['_id', 'Name'])
     finalDf = finalDf.reset_index().set_index(['stations', 'Name'])
     return finalDf
+
+
+def saveInPickle(df, path):
+    df.to_pickle(path)
