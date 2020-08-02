@@ -20,7 +20,7 @@ import requests
 
 def updateFiles():
     links = getLinks()
-    for link in links[-2:]:
+    for link in links:
         if not (alreadyDownloaded(link)):
             print(link + " is downloading.....")
             filePath = downloadAndSave(link)
