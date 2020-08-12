@@ -37,7 +37,7 @@ def ChooseComparison(df, Comparator, Interval=''):
 class Ploteo:
     def __init__(self, df, decoder):
         self.Index = df.dropna().index.tolist()
-        self.Date = str(df.dropna().name)
+        self.Date = (df.dropna().name)
         self.Value = df.dropna().tolist()
         self.Latitude = []
         self.Longitude = []
@@ -58,9 +58,11 @@ def SaveDecoderList():
         "../DataFrames/Stations/")
     print('Concatenado')
     Address = data['Address'].apply(lambda x: error(x), axis=0)
-    Longitude = data['Longitude'].apply(lambda x: error(x), axis=0)
-    Latitude = data['Latitude'].apply(lambda x: error(x), axis=0)
-    Number = data['Number'].apply(lambda x: error(x), axis=0)
+    Longitude = data['Longitude'].apply(
+        lambda x: error(x), axis=0).apply(lambda x: float(x.replace(",", ".")))
+    Latitude = data['Latitude'].apply(lambda x: error(
+        x), axis=0).apply(lambda x: float(x.replace(",", ".")))
+    Number = data['Number'].apply(lambda x: error(x))
     Tabla = pd.DataFrame([Number, Address, Latitude, Longitude]).T
     Tabla['Number'] = Tabla[0]
     Tabla['Address'] = Tabla[1]
