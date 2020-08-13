@@ -10,6 +10,18 @@ from pyunpack import Archive
 from os import listdir
 
 
+def Clusterization(df, cluster, op, Decode):
+    df = df.rename(columns=lambda x: Decode.get(x, cluster))
+    if op == "median":
+        return df.groupby(df.columns, axis=1).median()
+    if op == "mean":
+        return df.groupby(df.columns, axis=1).mean()
+    if op == "sum":
+        return df.groupby(df.columns, axis=1).sum()
+    else:
+        return "No se que funcion me has dado"
+
+
 def ChooseInterval(df, StartDate, EndDate, Value):
     c0 = df.index.to_series().between(StartDate, EndDate)
     return df[c0][Value]
