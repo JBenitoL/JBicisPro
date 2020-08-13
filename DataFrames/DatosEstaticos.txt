@@ -1,15 +1,15 @@
 ,ID,Number,Address,Latitude,Longitude,DistritoId,DistritoName,BarrioId,BarrioName,CardinalId,CardinalName,RegionId,RegionName
-0,1,1a,Puerta del Sol nº 1,40.4168961,-3.7024255,1,Centro,6,Sol,0,O,4,O
-1,2,1b,Puerta del Sol nº 1,40.4170009,-3.7024207000000002,1,Centro,6,Sol,0,O,4,O
+0,1,1a,Puerta del Sol nº 1,40.4168961,-3.7024255,1,Centro,6,Sol,0,O,4,C
+1,2,1b,Puerta del Sol nº 1,40.4170009,-3.7024207000000002,1,Centro,6,Sol,0,O,4,C
 2,3,2,Calle Miguel Moya nº 1,40.4205886,-3.7058415,1,Centro,6,Sol,0,O,0,O
 3,4,3,Plaza del Conde Suchil nº 2-4,40.4302937,-3.7069171,1,Centro,5,Universidad,0,O,0,O
 4,5,4,Calle Manuela Malasaña nº 5,40.4285524,-3.7025875,1,Centro,5,Universidad,0,O,0,O
 5,6,5,Calle Fuencarral nº 108,40.428528,-3.7020599,1,Centro,5,Universidad,0,O,0,O
-6,7,6,Calle Hortaleza nº 63,40.424147999999995,-3.6984470000000003,1,Centro,4,Justicia,0,O,4,O
-7,8,7,Calle Hortaleza nº 75,40.4251906,-3.6977714999999995,1,Centro,4,Justicia,0,O,4,O
-8,9,8,Plaza de Alonso Martínez nº 5,40.427868200000006,-3.6954403,1,Centro,4,Justicia,0,O,4,O
+6,7,6,Calle Hortaleza nº 63,40.424147999999995,-3.6984470000000003,1,Centro,4,Justicia,0,O,4,C
+7,8,7,Calle Hortaleza nº 75,40.4251906,-3.6977714999999995,1,Centro,4,Justicia,0,O,4,C
+8,9,8,Plaza de Alonso Martínez nº 5,40.427868200000006,-3.6954403,1,Centro,4,Justicia,0,O,4,C
 9,10,9,Plaza de San Miguel nº 9,40.4156057,-3.7095084000000003,1,Centro,1,Palacio,0,O,0,O
-10,11,10,Calle Marqués de la Ensenada nº 16,40.4250863,-3.6918807,1,Centro,4,Justicia,2,E,4,E
+10,11,10,Calle Marqués de la Ensenada nº 16,40.4250863,-3.6918807,1,Centro,4,Justicia,2,E,4,C
 11,12,11,Calle San Andrés nº 18,40.42694829999999,-3.7035918,1,Centro,5,Universidad,0,O,0,O
 12,13,12,Calle San Bernardo nº 85,40.42842460000001,-3.7061931000000006,1,Centro,5,Universidad,0,O,0,O
 13,14,13,Calle Conde Duque nº 22,40.4273264,-3.7104417,1,Centro,5,Universidad,0,O,0,O
@@ -17,24 +17,24 @@
 15,16,15,Calle San Vicente Ferrer nº 64,40.426164899999996,-3.7073763999999994,1,Centro,5,Universidad,0,O,0,O
 16,17,16,Calle San Bernardo nº 22,40.4230721,-3.7075065,1,Centro,1,Palacio,0,O,0,O
 17,18,17,Plaza de Carlos Cambronero nº 2,40.4232649,-3.7038312000000007,1,Centro,5,Universidad,0,O,0,O
-18,19,18,Plaza de Pedro Zerolo,40.4207773,-3.6996502,1,Centro,6,Sol,0,O,4,O
-19,20,19,Calle Prim nº 2,40.42186160000001,-3.6954983,1,Centro,4,Justicia,0,O,4,O
-20,21,20a,Calle Alcalá nº 49,40.4192342,-3.6954615,1,Centro,3,Cortes,0,O,4,O
-21,23,21a,Calle Montera nº 48,40.4197872,-3.7014814,1,Centro,6,Sol,0,O,4,O
-22,24,21b,Calle Montera nº 47,40.419720399999996,-3.7015235,1,Centro,6,Sol,0,O,4,O
+18,19,18,Plaza de Pedro Zerolo,40.4207773,-3.6996502,1,Centro,6,Sol,0,O,4,C
+19,20,19,Calle Prim nº 2,40.42186160000001,-3.6954983,1,Centro,4,Justicia,0,O,4,C
+20,21,20a,Calle Alcalá nº 49,40.4192342,-3.6954615,1,Centro,3,Cortes,0,O,4,C
+21,23,21a,Calle Montera nº 48,40.4197872,-3.7014814,1,Centro,6,Sol,0,O,4,C
+22,24,21b,Calle Montera nº 47,40.419720399999996,-3.7015235,1,Centro,6,Sol,0,O,4,C
 23,25,22,Calle Jacometrezo nº 3,40.4200783,-3.7065376000000003,1,Centro,6,Sol,0,O,0,O
 24,26,23,Plaza de Santo Domingo nº 1,40.4197429,-3.7080733,1,Centro,1,Palacio,0,O,0,O
 25,27,24,Calle Carlos III nº 1,40.417908000000004,-3.710692,1,Centro,1,Palacio,0,O,0,O
 26,28,25a,Plaza de Celenque nº 1,40.4173114,-3.7064809000000003,1,Centro,6,Sol,0,O,0,O
 27,29,25b,Plaza de Celenque nº 1,40.417278100000004,-3.7063837,1,Centro,6,Sol,0,O,0,O
-28,30,26,Plaza de las Salesas 7,40.423854999999996,-3.694475,1,Centro,4,Justicia,0,O,4,O
-29,31,27,Calle Jesús nº 1,40.4132798,-3.6956178,1,Centro,3,Cortes,3,S,4,S
-30,32,28,Calle Alcalá nº 27,40.418166299999996,-3.6992599999999998,1,Centro,6,Sol,0,O,4,O
-31,33,29,Calle del Marqués de Cubas nº 25,40.4162619,-3.6957355000000005,1,Centro,3,Cortes,3,S,4,S
+28,30,26,Plaza de las Salesas 7,40.423854999999996,-3.694475,1,Centro,4,Justicia,0,O,4,C
+29,31,27,Calle Jesús nº 1,40.4132798,-3.6956178,1,Centro,3,Cortes,3,S,4,C
+30,32,28,Calle Alcalá nº 27,40.418166299999996,-3.6992599999999998,1,Centro,6,Sol,0,O,4,C
+31,33,29,Calle del Marqués de Cubas nº 25,40.4162619,-3.6957355000000005,1,Centro,3,Cortes,3,S,4,C
 32,34,30,Calle Pavía nº 6,40.419209499999994,-3.711504,1,Centro,1,Palacio,0,O,0,O
 33,35,31,Calle Mayor nº 20,40.4163638,-3.7068969,1,Centro,6,Sol,0,O,0,O
 34,36,32,Plaza de la Provincia nº 1,40.4150099,-3.7061032,1,Centro,6,Sol,0,O,0,O
-35,37,33,Calle Carretas nº 8,40.4157138,-3.7031807999999997,1,Centro,6,Sol,0,O,4,O
+35,37,33,Calle Carretas nº 8,40.4157138,-3.7031807999999997,1,Centro,6,Sol,0,O,4,C
 36,38,34,Plaza de Jacinto Benavente,40.4146755,-3.7036824999999998,1,Centro,2,Embajadores,0,O,0,O
 37,39,35,Plaza del Cordón nº 1,40.414193100000006,-3.7103285,1,Centro,1,Palacio,0,O,0,O
 38,40,36,Plaza de Ramales nº 1,40.4167281,-3.7124038,1,Centro,1,Palacio,0,O,0,O
@@ -42,7 +42,7 @@
 40,42,38,Carrera de San Francisco nº 1,40.4110406,-3.7120733999999995,1,Centro,1,Palacio,0,O,0,O
 41,43,39,Plaza de la Cebada nº 16 ,40.4112744,-3.7088337,1,Centro,1,Palacio,0,O,0,O
 42,44,40,Plaza del Conde de Romanones nº 9,40.4138846,-3.7049407,1,Centro,2,Embajadores,0,O,0,O
-43,45,41,Calle Atocha nº 54,40.412204700000004,-3.6991147000000004,1,Centro,2,Embajadores,3,S,4,S
+43,45,41,Calle Atocha nº 54,40.412204700000004,-3.6991147000000004,1,Centro,2,Embajadores,3,S,4,C
 44,46,42,Calle Santa Isabel nº 32,40.410708500000005,-3.6982318,1,Centro,2,Embajadores,3,S,3,S
 45,47,43,Calle Lavapiés nº 34-36,40.4101564,-3.7025023999999997,1,Centro,2,Embajadores,3,S,3,S
 46,48,44,Calle Mesón de Paredes nº 35,40.409761700000004,-3.7040665999999995,1,Centro,2,Embajadores,3,S,3,S
@@ -53,21 +53,21 @@
 51,53,49,Ronda de Atocha nº 34,40.4060941,-3.6992759,2,Arganzuela,12,Palos de Moguer,3,S,3,S
 52,54,50,Calle Santa Isabel nº 57,40.4083684,-3.6933462999999995,1,Centro,2,Embajadores,3,S,3,S
 53,55,51,Ronda de Atocha nº 2,40.407560600000004,-3.6935205,2,Arganzuela,12,Palos de Moguer,3,S,3,S
-54,56,52,Plaza de Santa Ana nº 10,40.4144226,-3.7007163999999997,1,Centro,2,Embajadores,3,S,4,S
+54,56,52,Plaza de Santa Ana nº 10,40.4144226,-3.7007163999999997,1,Centro,2,Embajadores,3,S,4,C
 55,57,53,Calle Valencia nº 1,40.4089282,-3.7008803,1,Centro,2,Embajadores,3,S,3,S
 56,58,54,Calle Barceló nº 7,40.426682799999995,-3.7004230000000002,1,Centro,5,Universidad,0,O,0,O
 57,59,55,Plaza de San Ildefonso nº 3,40.42397570000001,-3.7020842000000003,1,Centro,5,Universidad,0,O,0,O
 58,60,56,Plaza del Carmen nº 1,40.4184192,-3.7032413999999996,1,Centro,6,Sol,0,O,0,O
 59,61,57,Calle Santa Cruz del Marcenado nº 24,40.4295658,-3.7126299,1,Centro,5,Universidad,0,O,0,O
-60,62,58,Calle Augusto Figueroa nº 33,40.4222862,-3.6978949999999995,1,Centro,4,Justicia,0,O,4,O
+60,62,58,Calle Augusto Figueroa nº 33,40.4222862,-3.6978949999999995,1,Centro,4,Justicia,0,O,4,C
 61,63,59,Calle Espíritu Santo nº 30,40.4255495,-3.7043418,1,Centro,5,Universidad,0,O,0,O
-62,64,60,Plaza de la Independencia nº 6,40.419752,-3.6883980000000003,3,Retiro,18,Jerónimos,2,E,4,E
+62,64,60,Plaza de la Independencia nº 6,40.419752,-3.6883980000000003,3,Retiro,18,Jerónimos,2,E,4,C
 63,65,61,Calle O'Donnell nº 28,40.42139829999999,-3.6752045,3,Retiro,17,Ibiza,2,E,2,E
 64,66,62,Calle O'Donnell nº 50,40.4213148,-3.6724968000000002,3,Retiro,17,Ibiza,2,E,2,E
 65,67,63,Calle Ibiza nº 62,40.4179237,-3.6708959,3,Retiro,17,Ibiza,2,E,2,E
-66,69,65,Calle Antonio Maura nº 15,40.416560499999996,-3.6904525,3,Retiro,18,Jerónimos,3,S,4,S
+66,69,65,Calle Antonio Maura nº 15,40.416560499999996,-3.6904525,3,Retiro,18,Jerónimos,3,S,4,C
 67,71,67,Calle Almadén nº 28,40.4108472,-3.693225,1,Centro,2,Embajadores,3,S,3,S
-68,72,68,Calle Espalter nº 1,40.412837200000006,-3.6912023,3,Retiro,18,Jerónimos,3,S,4,S
+68,72,68,Calle Espalter nº 1,40.412837200000006,-3.6912023,3,Retiro,18,Jerónimos,3,S,4,C
 69,73,69,Avenida de Alfonso XII nº 54,40.409808,-3.688822,3,Retiro,18,Jerónimos,3,S,3,S
 70,74,70,Avenida de Menéndez Pelayo nº 63,40.41530529999999,-3.6779232000000004,3,Retiro,18,Jerónimos,2,E,2,E
 71,75,71,Calle Doce de Octubre nº 28,40.4159569,-3.6738864999999996,3,Retiro,19,Niño Jesús,2,E,2,E
@@ -77,7 +77,7 @@
 75,79,75,Avenida de Menéndez Pelayo nº 90,40.4082805,-3.6784837999999995,3,Retiro,14,Pacífico,2,E,2,E
 76,80,76,Avenida del Mediterráneo nº 19,40.407672600000005,-3.6750121,3,Retiro,14,Pacífico,2,E,2,E
 77,81,77,Plaza del Conde de Casal nº 8,40.40635,-3.6704220000000003,3,Retiro,14,Pacífico,2,E,2,E
-78,82,78,Calle Cerro de la Plata nº 2,40.400910100000004,-3.6744803999999998,3,Retiro,15,Adelfas,2,E,3,E
+78,82,78,Calle Cerro de la Plata nº 2,40.400910100000004,-3.6744803999999998,3,Retiro,15,Adelfas,2,E,3,S
 79,83,79,Avenida de Menéndez Pelayo nº 38,40.4051451,-3.6803873999999994,3,Retiro,14,Pacífico,3,S,3,S
 80,84,80a,Paseo de la Infanta Isabel nº 3,40.4075685,-3.6902255,2,Arganzuela,13,Atocha,3,S,3,S
 81,85,80b,Paseo de la Infanta Isabel nº 3,40.4074902,-3.6901233999999996,2,Arganzuela,13,Atocha,3,S,3,S
@@ -86,16 +86,16 @@
 84,88,83,Calle Pío Baroja nº 10,40.4130243,-3.6751105,3,Retiro,19,Niño Jesús,2,E,2,E
 85,89,84,Calle Doctor Esquerdo nº 191,40.4032501,-3.6726019,3,Retiro,15,Adelfas,2,E,2,E
 86,90,85,Avenida de Menéndez Pelayo nº 11,40.421501,-3.6800080000000004,3,Retiro,18,Jerónimos,2,E,2,E
-87,91,86,Paseo del Prado nº 1,40.4186148,-3.6926217000000006,1,Centro,3,Cortes,3,S,4,S
+87,91,86,Paseo del Prado nº 1,40.4186148,-3.6926217000000006,1,Centro,3,Cortes,3,S,4,C
 88,92,87,Calle Ayala nº 44,40.427735999999996,-3.6832566,4,Salamanca,20,Recoletos,2,E,2,E
 89,93,88,Calle Velázquez nº 75,40.4313576,-3.6838303,4,Salamanca,25,Castellana,2,E,2,E
 90,94,89,Calle Ayala nº 102,40.427258200000004,-3.6752024,4,Salamanca,21,Goya,2,E,2,E
 91,95,90,Calle Goya nº 18,40.4250361,-3.6837876000000005,4,Salamanca,20,Recoletos,2,E,2,E
 92,96,91,Calle Hermosilla nº 70,40.426134000000005,-3.6787441,4,Salamanca,21,Goya,2,E,2,E
-93,97,92,Calle Claudio Coello nº 45,40.4262945,-3.6865463,4,Salamanca,20,Recoletos,2,E,4,E
-94,98,93,Calle Goya nº 1,40.4257046,-3.6893697999999997,4,Salamanca,20,Recoletos,2,E,4,E
-95,99,94,Paseo de Recoletos nº 32-34,40.422699,-3.6909648,1,Centro,4,Justicia,2,E,4,E
-96,100,95,Calle Claudio Coello nº 109,40.422658399999996,-3.6870547999999994,4,Salamanca,20,Recoletos,2,E,4,E
+93,97,92,Calle Claudio Coello nº 45,40.4262945,-3.6865463,4,Salamanca,20,Recoletos,2,E,4,C
+94,98,93,Calle Goya nº 1,40.4257046,-3.6893697999999997,4,Salamanca,20,Recoletos,2,E,4,C
+95,99,94,Paseo de Recoletos nº 32-34,40.422699,-3.6909648,1,Centro,4,Justicia,2,E,4,C
+96,100,95,Calle Claudio Coello nº 109,40.422658399999996,-3.6870547999999994,4,Salamanca,20,Recoletos,2,E,4,C
 97,101,96,Calle Alcalá nº 111,40.422064,-3.6821792999999996,3,Retiro,18,Jerónimos,2,E,2,E
 98,102,97,Avenida de Menéndez Pelayo nº 3,40.4226906,-3.6801307,4,Salamanca,20,Recoletos,2,E,2,E
 99,103,98,Plaza de Felipe II,40.4242625,-3.6753567000000005,4,Salamanca,21,Goya,2,E,2,E
@@ -104,11 +104,11 @@
 102,106,101,Calle Jorge Juan nº 131,40.4231526,-3.6691523,4,Salamanca,21,Goya,2,E,2,E
 103,107,102,Calle Alcalá nº 95,40.4211802,-3.6840229,3,Retiro,18,Jerónimos,2,E,2,E
 104,108,103,Calle Ortega y Gasset nº 6,40.430305700000005,-3.6865654,4,Salamanca,20,Recoletos,2,E,2,E
-105,109,104,Paseo de la Castellana nº 4,40.4268331,-3.6895336000000003,7,Chamberi,41,Almagro,2,E,4,E
-106,110,105,Calle Serrano nº 54,40.4267905,-3.6873921999999997,4,Salamanca,20,Recoletos,2,E,4,E
-107,111,106a,Calle Serrano nº 34,40.4251002,-3.6877226999999997,4,Salamanca,20,Recoletos,2,E,4,E
-108,112,106b,Calle Serrano nº 34,40.424963,-3.6877449999999996,4,Salamanca,20,Recoletos,2,E,4,E
-109,113,107,Calle Serrano nº 6,40.421524600000005,-3.6884368999999997,4,Salamanca,20,Recoletos,2,E,4,E
+105,109,104,Paseo de la Castellana nº 4,40.4268331,-3.6895336000000003,7,Chamberi,41,Almagro,2,E,4,C
+106,110,105,Calle Serrano nº 54,40.4267905,-3.6873921999999997,4,Salamanca,20,Recoletos,2,E,4,C
+107,111,106a,Calle Serrano nº 34,40.4251002,-3.6877226999999997,4,Salamanca,20,Recoletos,2,E,4,C
+108,112,106b,Calle Serrano nº 34,40.424963,-3.6877449999999996,4,Salamanca,20,Recoletos,2,E,4,C
+109,113,107,Calle Serrano nº 6,40.421524600000005,-3.6884368999999997,4,Salamanca,20,Recoletos,2,E,4,C
 110,114,108,Calle Mártires Concepcionistas nº 2,40.4273005,-3.6706024,4,Salamanca,21,Goya,2,E,2,E
 111,115,109,Calle José Ortega y Gasset nº 30,40.4300481,-3.6816402000000004,4,Salamanca,20,Recoletos,2,E,2,E
 112,116,110,Paseo de Moret nº 2,40.4344969,-3.7206892999999996,9,Moncloa-Aravaca,53,Argüelles,0,O,0,O
@@ -125,7 +125,7 @@
 123,127,119,Calle Méndez Álvaro nº 11,40.4013216,-3.6863218,2,Arganzuela,11,Delicias,3,S,3,S
 124,128,120,Calle Palos de la Frontera nº 40,40.4032208,-3.6944767999999995,2,Arganzuela,12,Palos de Moguer,3,S,3,S
 125,129,121,Paseo de Santa María de la Cabeza nº 58,40.4017926,-3.6987665,2,Arganzuela,8,Acacias,3,S,3,S
-126,130,122,Calle Santa Engracia nº 14,40.4295863,-3.6963983,7,Chamberi,40,Trafalgar,0,O,4,O
+126,130,122,Calle Santa Engracia nº 14,40.4295863,-3.6963983,7,Chamberi,40,Trafalgar,0,O,4,C
 127,131,123,Calle Guzmán el Bueno nº 2,40.4306458,-3.7133412000000003,1,Centro,5,Universidad,0,O,0,O
 128,132,161,Paseo de la Florida nº 8,40.4220812,-3.7218482,9,Moncloa-Aravaca,52,Casa de Campo,0,O,0,O
 129,133,162,Paseo de los Olmos nº 28,40.4034076,-3.7108108,2,Arganzuela,8,Acacias,3,S,3,S
@@ -162,7 +162,7 @@
 160,164,125,Calle Fernández de la Hoz nº 29,40.435285,-3.6948626000000004,7,Chamberi,41,Almagro,1,N,1,N
 161,165,141,Paseo de la Castellana nº 43,40.4355143,-3.6892367999999993,7,Chamberi,41,Almagro,1,N,1,N
 162,166,143,Calle Diego de León nº 52,40.4345973,-3.678492,4,Salamanca,25,Castellana,2,E,2,E
-163,167,142,Paseo de la Castellana nº 42,40.43340870000001,-3.6879154,7,Chamberi,41,Almagro,2,E,1,E
+163,167,142,Paseo de la Castellana nº 42,40.43340870000001,-3.6879154,7,Chamberi,41,Almagro,2,E,1,N
 164,168,127,Calle Fernando el Católico nº 19,40.4338516,-3.708439,7,Chamberi,39,Arapiles,0,O,0,O
 165,169,124,Calle Manuel Silvela nº 20,40.430952399999995,-3.6993465,7,Chamberi,40,Trafalgar,0,O,0,O
 166,170,144,Calle Juan Bravo nº 50,40.4323655,-3.6758555,4,Salamanca,24,Lista,2,E,2,E
@@ -204,8 +204,8 @@
 202,206,198,Gta. Rubén Darío 2,40.433111100000005,-3.6915555,7,Chamberi,41,Almagro,1,N,1,N
 203,207,199,"Fernando el Católico, 61",40.434361100000004,-3.7149165999999996,7,Chamberi,38,Gaztambide,0,O,0,O
 204,208,200,"Gta. Quevedo, 5",40.43369439999999,-3.7046666,7,Chamberi,39,Arapiles,0,O,0,O
-205,209,201,"José Abascal, frene al nº 2",40.438694399999996,-3.7038333,7,Chamberi,39,Arapiles,0,O,1,O
-206,210,202,Calle Santander esq. Avda. Filipinas,40.4411388,-3.7080832999999997,7,Chamberi,43,Vallehermoso,0,O,1,O
+205,209,201,"José Abascal, frene al nº 2",40.438694399999996,-3.7038333,7,Chamberi,39,Arapiles,0,O,1,N
+206,210,202,Calle Santander esq. Avda. Filipinas,40.4411388,-3.7080832999999997,7,Chamberi,43,Vallehermoso,0,O,1,N
 207,211,203,"General Ampudia, 2",40.44175,-3.7144722000000003,7,Chamberi,43,Vallehermoso,0,O,0,O
 208,212,204,Doctor Santero 1,40.447666600000005,-3.7041665999999998,7,Chamberi,43,Vallehermoso,1,N,1,N
 209,213,205,"Navarra, 1",40.4535,-3.7032777,6,Tetuan,32,Bellas Vistas,1,N,1,N
