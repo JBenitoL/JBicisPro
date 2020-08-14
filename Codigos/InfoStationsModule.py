@@ -54,10 +54,20 @@ class Ploteo:
         self.Latitude = []
         self.Longitude = []
         self.Address = []
-        for i in self.Index:
-            self.Latitude.append(decoder.get(i, 'Latitude'))
-            self.Longitude.append(decoder.get(i, 'Longitude'))
-            self.Address.append(decoder.get(i, 'Address'))
+        if type(self.Index[0]) == int:
+            for i in self.Index:
+                self.Latitude.append(decoder.get(i, 'Latitude'))
+                self.Longitude.append(decoder.get(i, 'Longitude'))
+                self.Address.append(decoder.get(i, 'Address'))
+
+    def getClusterMeans(self, df, decoder, FromColumn):
+        self.Address = decoder._obj[[FromColumn]].groupby(
+            by=FromColumn).count().index.tolist()
+
+        self.Latitude = decoder._obj[['Latitude', FromColumn]].groupby(
+            by=FromColumn).mean()['Latitude'].tolist()
+        self.Longitude = decoder._obj[['Longitude', FromColumn]].groupby(
+            by=FromColumn).mean()['Longitude'].tolist()
 
 
 def error(x):
