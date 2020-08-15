@@ -89,10 +89,11 @@ app.layout = html.Div(children=[
     html.H2(children='Chequea las bicis disponibles!'),
     html.Label('Agrupa las estaciones en:'),
     dcc.Dropdown(
+        id="clusters",
         options=[
             {'label': 'Estaciones', 'value': 'id'},
             {'label': 'Distritos', 'value': 'DistritoName'},
-            {'label': 'Barrios', 'value': 'BarriosName'},
+            {'label': 'Barrios', 'value': 'BarrioName'},
             {'label': 'Puntos cardinales', 'value': 'RegionName'}
         ],
         value='id'
@@ -101,8 +102,8 @@ app.layout = html.Div(children=[
 
     dcc.DatePickerRange(
         id='date-picker-range',
-        start_date=dt(1997, 5, 3),
-        end_date_placeholder_text='Select a date!'
+        start_date=dt(2019, 5, 3),
+        end_date=dt(2019, 5, 5)
     ),
 
     html.Div(children='''
@@ -125,12 +126,33 @@ app.layout = html.Div(children=[
 
 
 @app.callback(
+    [Output('year-slider', 'max'),
+     Output('year-slider', 'marks')],
+    [Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')])
+def slidermax(start_date, end_date):
+    df = Stations.ChooseInterval(data, start_date, end_date, Value)
+
+    df = Stations.ChooseAccuracy(df, Accuracy)
+    return len(df), {str(year): str(year) for year in range(0, len(df))}
+
+
+@app.callback(
     Output('graph-with-slider', 'figure'),
-    [Input('year-slider', 'value')])
-def update_figure(selected_year):
+    [Input('year-slider', 'value'),
+     Input('clusters', 'value'),
+     Input('date-picker-range', 'start_date'),
+     Input('date-picker-range', 'end_date')])
+def update_figure(selected_year, ClusterName, start_date, end_date):
+
+    df = Stations.ChooseInterval(data, start_date, end_date, Value)
+
+    df = Stations.ChooseAccuracy(df, Accuracy)
+    print(len(df))
 
     toPlot = Stations.Ploteo(df.iloc[selected_year], Decode)
-
+    if ClusterName != 'id':
+        toPlot.getClusterMeans(df.iloc[selected_year], Decode, ClusterName)
     fig = go.Figure(go.Scattermapbox(
         lat=toPlot.Latitude,
         lon=toPlot.Longitude,
