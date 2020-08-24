@@ -1,14 +1,22 @@
 from bs4 import BeautifulSoup
 import re
 import urllib.request as request
+import logging
+import boto3
+
+logger = logging.getLogger(__name__)
+logger.setLevel(logging.INFO)
 
 DATA_URL = "https://opendata.emtmadrid.es/Datos-estaticos/Datos-generales-(1)"
+
+s3_cli = boto3.client('s3')
+BUCKET = 'bicimad-project'
 
 def loadControlFile(cli, bucket, key):
 
     path_column = 1
     paths_saved = []
-    response = cli.get_object(
+    response = s3_cli.get_object(
         Bucket=bucket,
         Key=key
     )
@@ -20,9 +28,9 @@ def loadControlFile(cli, bucket, key):
     return paths_saved
     
 
-def createFile(cli, bucket, key):
+def createFile(bucket, key):
     headers = 'timestamp,path,file'
-    cli.put_object(
+    s3_cli.put_object(
         Body=headers.encode('utf-8'),
         Bucket=bucket,
         Key=key
@@ -30,7 +38,7 @@ def createFile(cli, bucket, key):
 
 def getLinks():
     html_page = request.urlopen(DATA_URL)
-    soup = BeautifulSoup(html_page)
+    soup = BeautifulSoup(html_page, features="html.parser")
     links = []
     # print(soup)
     for link in soup.findAll('a', attrs={'href': re.compile("/get")}):
@@ -45,10 +53,22 @@ def filterStations(links):
     return filtered
 
 
-def checkNewStations
+def checkNewStations(downloaded_stations, all_stations):
+    for station in all_stations:
+        if station in downloaded_stations:
+            logger.info("{} found in control csv".format(station))
+        else:
+            logger.info("New file {} founded. Downloading...")
+            downloadData(station)
+
+
 
 if __name__ == '__main__':
+    logger.addHandler(logging.StreamHandler())
 
     links = getLinks()
-    print(len(links))
-    print(links)
+    downloaded = loadControlFile(s3_cli, BUCKET, 'Control/stations.csv')
+
+    checkNewStations(downloaded, links)
+    #print(links)
+    #print(downloaded)
