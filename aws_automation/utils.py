@@ -35,7 +35,7 @@ def getLinks():
     # print(soup)
     for link in soup.findAll('a', attrs={'href': re.compile("/get")}):
         links.append(link.get('href'))
-    return links
+    return filterStations(links)
 
 def filterStations(links):
     filtered = []
@@ -45,6 +45,10 @@ def filterStations(links):
     return filtered
 
 
+def checkNewStations
+
 if __name__ == '__main__':
 
-    print(getLinks())
+    links = getLinks()
+    print(len(links))
+    print(links)

@@ -16,4 +16,5 @@ BUCKET = 'bicimad-project'
 if __name__ == '__main__':
 
     out = utils.loadControlFile(s3_cli, BUCKET, 'Control/stations.csv')
+    
     print(out)
